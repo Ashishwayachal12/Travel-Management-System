@@ -30,8 +30,8 @@ Ensure you have the following installed:
    ```
 2. Import the project into your Java IDE.
 3. Configure MySQL database:
-   - Create a database named `travel_db`.
-   - Execute the provided `travel_db.sql` file to set up tables.
+   - Create a database named `travel`.
+   - Execute the provided `travel.sql` file to set up tables.
 4. Update database connection settings in the Java code:
    ```java
    String url = "jdbc:mysql://localhost:3306/travel_db";
@@ -52,7 +52,7 @@ Ensure you have the following installed:
 5. **Admin Management:** Add/edit travel packages, manage users, and monitor bookings.
 
 ## Future Enhancements
-- Integration of payment gateways (PayPal, Stripe, etc.)
+- Integration of payment gateways (paytm,phonepe etc.)
 - Mobile application version
 - AI-based travel recommendations
 - Multi-language support
