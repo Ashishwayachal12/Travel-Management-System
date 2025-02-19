@@ -1,8 +1,13 @@
 package com.Ashish.wayachal;
 
-import java.awt.*;
-import javax.swing.*;
-import java.awt.event.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JProgressBar;
+import javax.swing.ImageIcon;
 
 
 public class Loading extends JFrame implements Runnable,ActionListener{

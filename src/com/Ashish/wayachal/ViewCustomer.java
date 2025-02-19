@@ -1,9 +1,29 @@
 package com.Ashish.wayachal;
 
 import javax.swing.*;
-import java.awt.*;
-import java.sql.*;
-import java.awt.event.*;
+import javax.swing.JButton;
+//import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+//import javax.swing.JRadioButton;
+//import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+//import javax.swing.border.Border;
+//import javax.swing.border.LineBorder;
+import javax.swing.BorderFactory;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+import java.sql.ResultSet;
+//import java.sql.PreparedStatement;
+//import java.sql.SQLException;
+//import java.sql.Statement;
 
 public class ViewCustomer extends JFrame implements ActionListener {
     JButton back;

@@ -1,11 +1,27 @@
 package com.Ashish.wayachal;
 
 
-import javax.swing.*;
-import java.awt.*;
-import javax.swing.border.*;
-import java.sql.*;
-import java.awt.event.*;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
+import javax.swing.BorderFactory;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import javax.swing.border.LineBorder;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 
 public class AddCustomer extends JFrame implements ActionListener{
 

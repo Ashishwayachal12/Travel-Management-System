@@ -1,13 +1,32 @@
 package com.Ashish.wayachal;
 
 
-import javax.swing.*;
-import java.awt.*;
-import javax.swing.border.*;
-import java.sql.*;
-import java.awt.event.*;
+import javax.swing.JButton;
+import javax.swing.JComboBox;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JRadioButton;
+import javax.swing.JTextField;
+import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+//import javax.swing.border.Border;
+import javax.swing.border.LineBorder;
+import javax.swing.BorderFactory;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.event.ActionListener;
+import java.awt.event.ActionEvent;
+//import java.sql.Connection;
+//import java.sql.DriverManager;
+import java.sql.ResultSet;
+import java.sql.PreparedStatement;
+//import java.sql.SQLException;
+//import java.sql.Statement;
 
-public class upadatepersonaldetails extends JFrame implements ActionListener{
+
+public class UpdatePersonalDetails extends JFrame implements ActionListener{
 
     JLabel lblusername,labelusername,labelname,lablname,gender,country,address,email,phonenumber,lbltext,lablid;
 
@@ -19,7 +38,7 @@ public class upadatepersonaldetails extends JFrame implements ActionListener{
     String username;
 
 
-    public upadatepersonaldetails(String username)
+    public UpdatePersonalDetails(String username)
     {
 
         this.username=username;
@@ -59,7 +78,7 @@ public class upadatepersonaldetails extends JFrame implements ActionListener{
         p1.add(labelusername);
 
 
-        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/dest1.jpg"));
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/dest9.jpg"));
         Image i2=i1.getImage().getScaledInstance(850,550,Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel image=new JLabel(i3);
@@ -73,12 +92,11 @@ public class upadatepersonaldetails extends JFrame implements ActionListener{
         p1.add(lablid);
 
 
-        tfid=new JTextField();
-        tfid.setBounds(215,90,150,30);
-        tfid.setBorder(BorderFactory.createEmptyBorder());
-        tfid.setFont(new Font("SAN SERIR",Font.BOLD,17));
-        tfid.setBackground(Color.white);
-        p1.add(tfid);
+        comboid=new JComboBox(new String[]{"Passport","Aadhar Card","Pan card","Ration Card","Girlfriend Phone Number"});
+        comboid.setBounds(215,90,150,25);
+        comboid.setForeground(Color.blue);
+        comboid.setBackground(Color.white);
+        p1.add(comboid);
 
         JLabel labnuber = new JLabel("Number");
         labnuber.setFont(new Font("SAN SERIF", Font.BOLD, 15));
@@ -197,7 +215,7 @@ public class upadatepersonaldetails extends JFrame implements ActionListener{
             while(rs.next())
             {
                 labelusername.setText(rs.getString("username"));
-                tfid.setText(rs.getString("id"));
+                comboid.setSelectedItem(rs.getString("id"));
                 tfnumber.setText(rs.getString("number"));
                 labelname.setText(rs.getString("name"));
                 tfgender.setText(rs.getString("gender"));
@@ -216,56 +234,63 @@ public class upadatepersonaldetails extends JFrame implements ActionListener{
         setVisible(true);
     }
 
-    public   void    actionPerformed(ActionEvent ae)
-    {
-        if(ae.getSource()==add)
-        {
-            setVisible (false);
-            String username=labelusername.getText();
-            String id=tfid.getText();
-            String number=tfnumber.getText();
-            String name=labelname.getText();
-            String gender=tfgender.getText();
-            String country=tfcountry.getText();
-            String address=tfaddress.getText();
-            String phone=tfphonenumber.getText();
-            String email=tfemail.getText();
+    public void actionPerformed(ActionEvent ae) {
+        if (ae.getSource() == add) {
+            String username = labelusername.getText();
+            String id=(String)comboid.getSelectedItem();
+            String number = tfnumber.getText();
+            String name = labelname.getText();
+            String gender = tfgender.getText();
+            String country = tfcountry.getText();
+            String address = tfaddress.getText();
+            String phone = tfphonenumber.getText();
+            String email = tfemail.getText();
 
-            try
-            {
-
-                if(true)
-                {
-                    Conn c=new Conn();
-                    String query="update  customer set username='"+username+"',id='"+id+"',number='"+number+"',name='"+name+"',gender='"+gender+"',country='"+country+"',address='"+address+"',phone='"+phone+"',email='"+email+"'" ;
-                    c.s.executeUpdate(query);
-
-                    JOptionPane.showMessageDialog(null,"Customer Details Updated Successfull");
-                    setVisible(false);
-                    new Dashboard(username);
-                }
-                else{
-                    JOptionPane.showMessageDialog(null,"Fill All The details...");
-                    setVisible(true);
-                }
-
-            }catch(Exception e)
-            {
-                e.printStackTrace();
+            // Validate if any field is empty
+            if (id.isEmpty() || number.isEmpty() || name.isEmpty() || gender.isEmpty() ||
+                    country.isEmpty() || address.isEmpty() || phone.isEmpty() || email.isEmpty()) {
+                JOptionPane.showMessageDialog(null, "Fill all the details before updating.");
+                return; // Stop execution if fields are empty
             }
 
-        }else if(ae.getSource()==back)
-        {
-            setVisible (false);
+            try {
+                Conn c = new Conn(); // Using your database connection class
+                String query = "UPDATE customer SET id=?, number=?, name=?, gender=?, country=?, address=?, phone=?, email=? WHERE username=?";
+                PreparedStatement stmt = c.c.prepareStatement(query);
+
+                stmt.setString(1, id);
+                stmt.setString(2, number);
+                stmt.setString(3, name);
+                stmt.setString(4, gender);
+                stmt.setString(5, country);
+                stmt.setString(6, address);
+                stmt.setString(7, phone);
+                stmt.setString(8, email);
+                stmt.setString(9, username);
+
+                int rowsUpdated = stmt.executeUpdate();
+                if (rowsUpdated > 0) {
+                    JOptionPane.showMessageDialog(null, "Customer Details Updated Successfully");
+                    setVisible(false);
+                    new Dashboard(username);
+                } else {
+                    JOptionPane.showMessageDialog(null, "Update failed! Customer not found.");
+                }
+
+                stmt.close();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+        } else if (ae.getSource() == back) {
+            setVisible(false);
             new Dashboard(username);
-
         }
-
     }
+
 
     public static void main(String[]args)
     {
-        new upadatepersonaldetails("");
+        new UpdatePersonalDetails("");
     }
 
 }

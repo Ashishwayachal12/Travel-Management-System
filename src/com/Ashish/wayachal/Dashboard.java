@@ -1,10 +1,18 @@
 package com.Ashish.wayachal;
 
 
-import javax.swing.*;
-import java.awt.*;
+import javax.swing.JButton;
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.ImageIcon;
 import javax.swing.border.LineBorder;
-import java.awt.event.*;
+import java.awt.Color;
+import java.awt.Font;
+import java.awt.Image;
+import java.awt.Insets;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
 
 public class Dashboard extends JFrame implements ActionListener{
@@ -235,7 +243,7 @@ public class Dashboard extends JFrame implements ActionListener{
         }else if(ae.getSource()==upadatepersonaldetails)
         {
             setVisible (false);
-            new upadatepersonaldetails(username);
+            new UpdatePersonalDetails(username);
 
 
         }else if(ae.getSource()==viewpersonaldetails)
