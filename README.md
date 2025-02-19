@@ -26,7 +26,7 @@ Ensure you have the following installed:
 ### Steps to Run the Project
 1. Clone the repository:
    ```sh
-   git clone https://github.com/yourusername/travel-management-system.git
+   git clone https://github.com/Ashishwayachal12/Travel-Management-System.git
    ```
 2. Import the project into your Java IDE.
 3. Configure MySQL database:
