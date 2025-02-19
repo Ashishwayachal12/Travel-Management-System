@@ -32,9 +32,9 @@ Ensure you have the following installed:
 3. Configure MySQL database:
    - Create a database named `travel`.
    - Execute the provided `travel.sql` file to set up tables.
-4. Update database connection settings in the Java code:
+4. Update database connection(Conn.java) settings in the Java code:
    ```java
-   String url = "jdbc:mysql://localhost:3306/travel_db";
+   String url = "jdbc:mysql://localhost:3306/travel";
    String user = "root";
    String password = "yourpassword";
    ```
