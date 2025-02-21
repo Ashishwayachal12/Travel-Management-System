@@ -17,6 +17,8 @@ import javax.swing.ImageIcon;
 import javax.swing.BorderFactory;
 import javax.swing.border.LineBorder;
 import java.awt.Choice;
+import java.awt.event.KeyAdapter;
+import java.awt.event.KeyEvent;
 
 
 public class Signup extends JFrame implements ActionListener {
@@ -134,6 +136,15 @@ public class Signup extends JFrame implements ActionListener {
         JLabel image=new JLabel(i3);
         image.setBounds(580,50,250,250);
         add(image);
+        tfpassword.addKeyListener(new KeyAdapter() {
+            @Override
+            public void keyPressed(KeyEvent e) {
+                if (e.getKeyCode() == KeyEvent.VK_ENTER) {
+                    create.doClick(); // Simulate a button click
+                }
+            }
+        });
+
 
         setVisible(true);
     }
@@ -175,6 +186,7 @@ public class Signup extends JFrame implements ActionListener {
             new Login();
         }
     }
+
 
     public static void main(String[] args) {
         new Signup();

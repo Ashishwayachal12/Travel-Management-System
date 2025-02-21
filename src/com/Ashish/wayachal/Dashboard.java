@@ -56,6 +56,13 @@ public class Dashboard extends JFrame implements ActionListener{
         heading.setForeground(Color.white);
         p1.add(heading);
 
+        JLabel text = new JLabel("WELCOME TO FREE TRAVEL");
+        text.setFont(new Font("SAN SERIF", Font.BOLD, 30));
+        text.setBounds(700, 10, 800, 40);
+        text.setForeground(Color.WHITE);
+        p1.add(text);
+
+
         JPanel p2 = new JPanel();
         p2.setBackground(new Color(0,0,102));
         p2.setBounds(0, 65, 300, 900);
@@ -67,7 +74,7 @@ public class Dashboard extends JFrame implements ActionListener{
         addpersonaldetails.setBackground(new Color(0,0,102));
         addpersonaldetails.setForeground(Color.white);
         addpersonaldetails.setFont(new Font("Tahoma",Font.PLAIN,20));
-        addpersonaldetails.setBorder(new LineBorder(new Color(85, 62, 46)));
+        addpersonaldetails.setBorder(new LineBorder(new Color(0,0,102)));
         addpersonaldetails.setMargin(new Insets(0,0,0,60));
         addpersonaldetails.addActionListener(this);
         p2.add(addpersonaldetails);
@@ -77,7 +84,7 @@ public class Dashboard extends JFrame implements ActionListener{
         upadatepersonaldetails.setBackground(new Color(0,0,102));
         upadatepersonaldetails.setForeground(Color.white);
         upadatepersonaldetails.setFont(new Font("Tahoma",Font.PLAIN,20));
-        upadatepersonaldetails.setBorder(new LineBorder(new Color(85, 62, 46)));
+        upadatepersonaldetails.setBorder(new LineBorder(new Color(0,0,102)));
         upadatepersonaldetails.setMargin(new Insets(0,0,0,30));
         upadatepersonaldetails.addActionListener(this);
         p2.add(upadatepersonaldetails);
@@ -88,7 +95,7 @@ public class Dashboard extends JFrame implements ActionListener{
         viewpersonaldetails.setBackground(new Color(0,0,102));
         viewpersonaldetails.setForeground(Color.white);
         viewpersonaldetails.setFont(new Font("Tahoma",Font.PLAIN,20));
-        viewpersonaldetails.setBorder(new LineBorder(new Color(85, 62, 46)));
+        viewpersonaldetails.setBorder(new LineBorder(new Color(0,0,102)));
         viewpersonaldetails.setMargin(new Insets(0,0,0,30));
         viewpersonaldetails.addActionListener(this);
         p2.add(viewpersonaldetails);
@@ -98,7 +105,7 @@ public class Dashboard extends JFrame implements ActionListener{
         deletepersonaldetails.setBackground(new Color(0,0,102));
         deletepersonaldetails.setForeground(Color.white);
         deletepersonaldetails.setFont(new Font("Tahoma",Font.PLAIN,20));
-        deletepersonaldetails.setBorder(new LineBorder(new Color(85, 62, 46)));
+        deletepersonaldetails.setBorder(new LineBorder(new Color(0, 0, 102)));
         deletepersonaldetails.setMargin(new Insets(0,0,0,40));
         deletepersonaldetails.addActionListener(this);
         p2.add(deletepersonaldetails);
@@ -108,7 +115,7 @@ public class Dashboard extends JFrame implements ActionListener{
         checkpackages.setBackground(new Color(0,0,102));
         checkpackages.setForeground(Color.white);
         checkpackages.setFont(new Font("Tahoma",Font.PLAIN,20));
-        checkpackages.setBorder(new LineBorder(new Color(85, 62, 46)));
+        checkpackages.setBorder(new LineBorder(new Color(0,0,102)));
         checkpackages.setMargin(new Insets(0,0,0,110));
         checkpackages.addActionListener(this);
         p2.add(checkpackages);
@@ -118,7 +125,7 @@ public class Dashboard extends JFrame implements ActionListener{
         bookpackages.setBackground(new Color(0,0,102));
         bookpackages.setForeground(Color.white);
         bookpackages.setFont(new Font("Tahoma",Font.PLAIN,20));
-        bookpackages.setBorder(new LineBorder(new Color(85, 62, 46)));
+        bookpackages.setBorder(new LineBorder(new Color(0,0,102)));
         bookpackages.setMargin(new Insets(0,0,0,120));
         bookpackages.addActionListener(this);
         p2.add(bookpackages);
@@ -128,7 +135,7 @@ public class Dashboard extends JFrame implements ActionListener{
         viewpackages.setBackground(new Color(0,0,102));
         viewpackages.setForeground(Color.white);
         viewpackages.setFont(new Font("Tahoma",Font.PLAIN,20));
-        viewpackages.setBorder(new LineBorder(new Color(85, 62, 46)));
+        viewpackages.setBorder(new LineBorder(new Color(0,0,102)));
         viewpackages.setMargin(new Insets(0,0,0,120));
         viewpackages.addActionListener(this);
         p2.add(viewpackages);
@@ -138,7 +145,7 @@ public class Dashboard extends JFrame implements ActionListener{
         viewhotel.setBackground(new Color(0,0,102));
         viewhotel.setForeground(Color.white);
         viewhotel.setFont(new Font("Tahoma",Font.PLAIN,20));
-        viewhotel.setBorder(new LineBorder(new Color(85, 62, 46)));
+        viewhotel.setBorder(new LineBorder(new Color(0,0,102)));
         viewhotel.setMargin(new Insets(0,0,0,130));
         viewhotel.addActionListener(this);
         p2.add(viewhotel);
@@ -148,7 +155,7 @@ public class Dashboard extends JFrame implements ActionListener{
         bookhotel.setBackground(new Color(0,0,102));
         bookhotel.setForeground(Color.white);
         bookhotel.setFont(new Font("Tahoma",Font.PLAIN,20));
-        bookhotel.setBorder(new LineBorder(new Color(85, 62, 46)));
+        bookhotel.setBorder(new LineBorder(new Color(0,0,102)));
         bookhotel.setMargin(new Insets(0,0,0,140));
         bookhotel.addActionListener(this);
         p2.add(bookhotel);
@@ -158,7 +165,7 @@ public class Dashboard extends JFrame implements ActionListener{
         viewbookhotel.setBackground(new Color(0,0,102));
         viewbookhotel.setForeground(Color.white);
         viewbookhotel.setFont(new Font("Tahoma",Font.PLAIN,20));
-        viewbookhotel.setBorder(new LineBorder(new Color(85, 62, 46)));
+        viewbookhotel.setBorder(new LineBorder(new Color(0,0,102)));
         viewbookhotel.setMargin(new Insets(0,0,0,70));
         viewbookhotel.addActionListener(this);
         p2.add(viewbookhotel);
@@ -168,7 +175,7 @@ public class Dashboard extends JFrame implements ActionListener{
         destinations.setBackground(new Color(0,0,102));
         destinations.setForeground(Color.white);
         destinations.setFont(new Font("Tahoma",Font.PLAIN,20));
-        destinations.setBorder(new LineBorder(new Color(85, 62, 46)));
+        destinations.setBorder(new LineBorder(new Color(0,0,102)));
         destinations.setMargin(new Insets(0,0,0,125));
         destinations.addActionListener(this);
         p2.add(destinations);
@@ -178,7 +185,7 @@ public class Dashboard extends JFrame implements ActionListener{
         payments.setBackground(new Color(0,0,102));
         payments.setForeground(Color.white);
         payments.setFont(new Font("Tahoma",Font.PLAIN,20));
-        payments.setBorder(new LineBorder(new Color(85, 62, 46)));
+        payments.setBorder(new LineBorder(new Color(0,0,102)));
         payments.setMargin(new Insets(0,0,0,155));
         payments.addActionListener(this);
         p2.add(payments);
@@ -188,7 +195,7 @@ public class Dashboard extends JFrame implements ActionListener{
         calculater.setBackground(new Color(0,0,102));
         calculater.setForeground(Color.white);
         calculater.setFont(new Font("Tahoma",Font.PLAIN,20));
-        calculater.setBorder(new LineBorder(new Color(85, 62, 46)));
+        calculater.setBorder(new LineBorder(new Color(0,0,102)));
         calculater.setMargin(new Insets(0,0,0,145));
         calculater.addActionListener(this);
         p2.add(calculater);
@@ -198,7 +205,7 @@ public class Dashboard extends JFrame implements ActionListener{
         notepad.setBackground(new Color(0,0,102));
         notepad.setForeground(Color.white);
         notepad.setFont(new Font("Tahoma",Font.PLAIN,20));
-        notepad.setBorder(new LineBorder(new Color(85, 62, 46)));
+        notepad.setBorder(new LineBorder(new Color(0,0,102)));
         notepad.setMargin(new Insets(0,0,0,70));
         notepad.addActionListener(this);
         p2.add(notepad);
@@ -208,24 +215,20 @@ public class Dashboard extends JFrame implements ActionListener{
         about.setBackground(new Color(0,0,102));
         about.setForeground(Color.white);
         about.setFont(new Font("Tahoma",Font.PLAIN,20));
-        about.setBorder(new LineBorder(new Color(85, 62, 46)));
+        about.setBorder(new LineBorder(new Color(0,0,102)));
         about.setMargin(new Insets(0,0,0,175));
         about.addActionListener(this);
         p2.add(about);
 
-        ImageIcon i4=new ImageIcon(ClassLoader.getSystemResource("icons/home.jpg"));
+        ImageIcon i4=new ImageIcon(ClassLoader.getSystemResource("icons/dest8.jpg"));
         Image i5=i4.getImage().getScaledInstance(1650,1000,Image.SCALE_DEFAULT);
         ImageIcon i6=new ImageIcon(i5);
         JLabel Image=new JLabel(i6);
         Image.setBounds(0,0,1650,1000);
         add(Image);
 
-        JLabel text = new JLabel("WELCOME TO FREETRAVEL");
-        text.setFont(new Font("SAN SERIF", Font.BOLD, 30));
-        text.setBounds(600, 70, 1200, 70);
-        text.setForeground(Color.WHITE);
-        text.setFont(new Font("Tahoma",Font.PLAIN,55));
-        Image.add(text);
+
+
 
 
         setVisible(true);
@@ -259,13 +262,13 @@ public class Dashboard extends JFrame implements ActionListener{
 
         }else if(ae.getSource()==checkpackages)
         {
-            setVisible (false);
-            // new AddCustomer();
+            setVisible (true);
+             new CheckPackage(username);
 
         }else if(ae.getSource()==bookpackages)
         {
             setVisible (false);
-            // new AddCustomer();
+         //    new BookPackage(username);
 
         }else if(ae.getSource()==viewpackages)
         {
@@ -304,13 +307,13 @@ public class Dashboard extends JFrame implements ActionListener{
 
         }else if(ae.getSource()==notepad)
         {
-            setVisible (false);
-            // new AddCustomer();
+            setVisible (true);
+             new Notepad();
 
         }else if(ae.getSource()==about)
         {
-            setVisible (false);
-            // new AddCustomer();
+            setVisible (true);
+             new About();
 
         }
 

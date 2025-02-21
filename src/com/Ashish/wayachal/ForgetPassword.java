@@ -15,7 +15,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         setTitle("TRAVEL AND TOURISM MANAGEMENT SYSTEM");
 
         ImageIcon icon = new ImageIcon(ClassLoader.getSystemResource("icons/LOGO.png"));
-        setIconImage(icon.getImage()); // Add logo to the window icon
+        setIconImage(icon.getImage());
 
         setResizable(false);
 
