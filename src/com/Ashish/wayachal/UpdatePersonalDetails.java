@@ -59,7 +59,7 @@ public class UpdatePersonalDetails extends JFrame implements ActionListener{
         p1.setLayout(null);
         add(p1);
 
-        lbltext = new JLabel("Update Customer Details.");
+        lbltext = new JLabel("Update Personal Details");
         lbltext.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lbltext.setBounds(50, 0, 300, 25);
         lbltext.setForeground(Color.white);

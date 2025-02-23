@@ -53,7 +53,7 @@ public class Login extends JFrame implements ActionListener{
         p1.setLayout(null);
         add(p1);
 
-        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/mountains-7499281.jpg"));
+        ImageIcon i1=new ImageIcon(ClassLoader.getSystemResource("icons/travel.jpg"));
         Image i2=i1.getImage().getScaledInstance(400,400,Image.SCALE_DEFAULT);
         ImageIcon i3=new ImageIcon(i2);
         JLabel image=new JLabel(i3);
@@ -68,7 +68,7 @@ public class Login extends JFrame implements ActionListener{
 
         JLabel lblusername=new JLabel("Username");
         lblusername.setBounds(60, 20,100,25);
-        lblusername.setFont(new Font("SAN SERIR",Font.PLAIN,20));
+        lblusername.setFont(new Font("SAN SERIR",Font.BOLD,20));
         p2.add(lblusername);
 
         tfusername=new JTextField();
@@ -81,7 +81,7 @@ public class Login extends JFrame implements ActionListener{
 
         JLabel lblpassword=new JLabel("Password");
         lblpassword.setBounds(60, 110,100,25);
-        lblpassword.setFont(new Font("SAN SERIR",Font.PLAIN,20));
+        lblpassword.setFont(new Font("SAN SERIR",Font.BOLD,20));
         p2.add(lblpassword);
 
         tfpassword=new JPasswordField();
@@ -120,6 +120,7 @@ public class Login extends JFrame implements ActionListener{
 
         JLabel text=new JLabel("Trouble in login...");
         text.setBounds(300,250,150,20);
+        text.setFont(new Font("SAN SERIR",Font.BOLD,15));
         text.setForeground(Color.red);
         p2.add(text);
 

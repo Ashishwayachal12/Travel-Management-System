@@ -52,7 +52,7 @@ public class ViewCustomer extends JFrame implements ActionListener {
         panel.setBorder(BorderFactory.createLineBorder(Color.BLACK, 2));
         background.add(panel);
 
-        JLabel title = new JLabel("Customer Details");
+        JLabel title = new JLabel("Personal Details");
         title.setFont(new Font("Serif", Font.BOLD, 24));
         title.setBounds(300, 20, 300, 30);
         panel.add(title);

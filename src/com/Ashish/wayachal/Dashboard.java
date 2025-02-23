@@ -231,6 +231,8 @@ public class Dashboard extends JFrame implements ActionListener{
 
 
 
+
+
         setVisible(true);
     }
 
