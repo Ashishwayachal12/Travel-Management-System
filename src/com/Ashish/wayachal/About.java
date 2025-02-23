@@ -42,7 +42,8 @@ public class About extends JFrame implements ActionListener {
             This application helps users access travel-related information 
             effortlessly and track tour details efficiently.
             
-            ✦ Advantages of Project:
+             Advantages of Project:
+            
             ✅ Provides accurate information
             ✅ Simplifies manual work
             ✅ Reduces documentation efforts

@@ -48,7 +48,7 @@ public class Signup extends JFrame implements ActionListener {
 
 
         JLabel lblusername = new JLabel("Username");
-        lblusername.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblusername.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblusername.setBounds(50, 20, 125, 25);
         p1.add(lblusername);
 
@@ -61,7 +61,7 @@ public class Signup extends JFrame implements ActionListener {
 
 
         JLabel lblname = new JLabel("Name");
-        lblname.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblname.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblname.setBounds(50, 60, 125, 25);
         p1.add(lblname);
 
@@ -73,7 +73,7 @@ public class Signup extends JFrame implements ActionListener {
         p1.add(tfname);
 
         JLabel lblpassword = new JLabel("Password");
-        lblpassword.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblpassword.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblpassword.setBounds(50, 100, 125, 25);
         p1.add(lblpassword);
 
@@ -85,7 +85,7 @@ public class Signup extends JFrame implements ActionListener {
         p1.add(tfpassword);
 
         JLabel lblsecurity = new JLabel("Security Question");
-        lblsecurity.setFont(new Font("SAN SERIF", Font.PLAIN, 18));
+        lblsecurity.setFont(new Font("SAN SERIF", Font.BOLD, 18));
         lblsecurity.setBounds(50, 140, 125, 30);
         p1.add(lblsecurity);
 
@@ -96,12 +96,13 @@ public class Signup extends JFrame implements ActionListener {
         security.add("What is the name of your favorite book?");
         security.add("What was the name of your first car?");
         security.setBounds(190, 140, 250, 30);
+        security.setFont(new Font("SAN SERIF", Font.BOLD, 13));
         p1.add(security);
 
 
 
         JLabel lblanswer = new JLabel("Answer");
-        lblanswer.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblanswer.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblanswer.setBounds(50, 180, 125, 25);
         p1.add(lblanswer);
 
@@ -116,7 +117,7 @@ public class Signup extends JFrame implements ActionListener {
         create.setBounds(80,250,100,30);
         create.setBackground(Color.white);
         create.setForeground(new Color(133, 193, 233));
-        create.setFont(new Font("SAN SERIR",Font.BOLD,15));
+        create.setFont(new Font("SAN SERIR",Font.BOLD,17));
         create.setBorder(new LineBorder(new Color(85, 62, 46)));
         create.addActionListener(this);
         p1.add(create);
@@ -125,7 +126,7 @@ public class Signup extends JFrame implements ActionListener {
         back.setBounds(250,250,100,30);
         back.setBackground(Color.white);
         back.setForeground(new Color(133, 193, 233));
-        back.setFont(new Font("SAN SERIR",Font.BOLD,15));
+        back.setFont(new Font("SAN SERIR",Font.BOLD,17));
         back.setBorder(new LineBorder(new Color(85, 62, 46)));
         back.addActionListener(this);
         p1.add(back);

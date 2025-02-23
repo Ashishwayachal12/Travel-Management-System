@@ -95,7 +95,7 @@ public class Login extends JFrame implements ActionListener{
         login.setBounds(20,200,130,30);
         login.setBackground(new Color(173, 216, 230));
         login.setForeground(Color.black);
-        login.setFont(new Font("SAN SERIR",Font.BOLD,15));
+        login.setFont(new Font("SAN SERIR",Font.BOLD,17));
         login.setBorder(new LineBorder(new Color(85, 62, 46)));
         login.addActionListener(this);
         p2.add(login);
@@ -104,7 +104,7 @@ public class Login extends JFrame implements ActionListener{
         signup.setBounds(230,200,130,30);
         signup.setBackground(new Color(173, 216, 230));
         signup.setForeground(Color.black);
-        signup.setFont(new Font("SAN SERIR",Font.BOLD,15));
+        signup.setFont(new Font("SAN SERIR",Font.BOLD,17));
         signup.setBorder(new LineBorder(new Color(85, 62, 46)));
         signup.addActionListener(this);
         p2.add(signup);
@@ -113,7 +113,7 @@ public class Login extends JFrame implements ActionListener{
         password.setBounds(130,250,130,30);
         password.setBackground(new Color(173, 216, 230));
         password.setForeground(Color.black);
-        password.setFont(new Font("SAN SERIR",Font.BOLD,12));
+        password.setFont(new Font("SAN SERIR",Font.BOLD,13));
         password.setBorder(new LineBorder(new Color(85, 62, 46)));
         password.addActionListener(this);
         p2.add(password);

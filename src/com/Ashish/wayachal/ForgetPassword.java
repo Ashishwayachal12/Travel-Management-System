@@ -37,7 +37,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         add(p1);
 
         JLabel lblusername = new JLabel("Username");
-        lblusername.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblusername.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblusername.setBounds(50, 20, 125, 25);
         p1.add(lblusername);
 
@@ -52,13 +52,13 @@ public class ForgetPassword extends JFrame implements ActionListener {
         search.setBounds(380, 20, 100, 30);
         search.setBackground(Color.white);
         search.setForeground(new Color(133, 193, 233));
-        search.setFont(new Font("SAN SERIR", Font.BOLD, 15));
+        search.setFont(new Font("SAN SERIR", Font.BOLD, 17));
         search.setBorder(new LineBorder(new Color(85, 62, 46)));
         search.addActionListener(this);
         p1.add(search);
 
         JLabel lblname = new JLabel("Name");
-        lblname.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblname.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblname.setBounds(50, 60, 150, 30);
         p1.add(lblname);
 
@@ -70,7 +70,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         p1.add(tfname);
 
         JLabel lblsecurity = new JLabel("Security Question");
-        lblsecurity.setFont(new Font("SAN SERIF", Font.PLAIN, 18));
+        lblsecurity.setFont(new Font("SAN SERIF", Font.BOLD, 18));
         lblsecurity.setBounds(50, 100, 150, 30);
         p1.add(lblsecurity);
 
@@ -82,7 +82,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         p1.add(tfsecurity);
 
         JLabel lblanswer = new JLabel("Answer");
-        lblanswer.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblanswer.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblanswer.setBounds(50, 140, 150, 30);
         p1.add(lblanswer);
 
@@ -97,13 +97,13 @@ public class ForgetPassword extends JFrame implements ActionListener {
         retrieve.setBounds(380, 140, 100, 30);
         retrieve.setBackground(Color.white);
         retrieve.setForeground(new Color(133, 193, 233));
-        retrieve.setFont(new Font("SAN SERIR", Font.BOLD, 15));
+        retrieve.setFont(new Font("SAN SERIR", Font.BOLD, 17));
         retrieve.setBorder(new LineBorder(new Color(85, 62, 46)));
         retrieve.addActionListener(this);
         p1.add(retrieve);
 
         JLabel lblpassword = new JLabel("Password");
-        lblpassword.setFont(new Font("SAN SERIF", Font.PLAIN, 20));
+        lblpassword.setFont(new Font("SAN SERIF", Font.BOLD, 20));
         lblpassword.setBounds(50, 180, 150, 25);
         p1.add(lblpassword);
 
@@ -118,7 +118,7 @@ public class ForgetPassword extends JFrame implements ActionListener {
         back.setBounds(150, 230, 150, 30);
         back.setBackground(Color.white);
         back.setForeground(new Color(133, 193, 233));
-        back.setFont(new Font("SAN SERIR", Font.BOLD, 15));
+        back.setFont(new Font("SAN SERIR", Font.BOLD, 17));
         back.setBorder(new LineBorder(new Color(85, 62, 46)));
         back.addActionListener(this);
         p1.add(back);

@@ -1,7 +1,6 @@
 package com.Ashish.wayachal;
 
-import java.awt.Color;
-import java.awt.Font;
+import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import javax.swing.JFrame;
@@ -59,10 +58,12 @@ public class Loading extends JFrame implements Runnable,ActionListener{
         getContentPane().setBackground(Color.white);
         setLayout(null);
 
-        JLabel text=new JLabel("Tavel and Tourism Application");
+
+
+        JLabel text=new JLabel("Keep pushing forward—every step counts! \uD83D\uDE80");
         text.setBounds(50,20,600,40);
-        text.setForeground(Color.BLUE);
-        text.setFont(new Font("SAN SERIF", Font.BOLD, 35));
+        text.setForeground(new Color(134, 10, 220));
+        text.setFont(new Font("SAN SERIF", Font.BOLD, 25));
         add(text);
 
 
