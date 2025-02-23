@@ -270,7 +270,7 @@ public class Dashboard extends JFrame implements ActionListener{
         }else if(ae.getSource()==bookpackages)
         {
             setVisible (false);
-         //    new BookPackage(username);
+             new BookPackage(username);
 
         }else if(ae.getSource()==viewpackages)
         {
@@ -285,7 +285,7 @@ public class Dashboard extends JFrame implements ActionListener{
         }else if(ae.getSource()==bookhotel)
         {
             setVisible (false);
-            // new AddCustomer();
+//             new AddCustomer(username);
 
         }else if(ae.getSource()==viewbookhotel)
         {

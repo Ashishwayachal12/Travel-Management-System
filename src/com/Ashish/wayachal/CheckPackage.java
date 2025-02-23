@@ -117,7 +117,7 @@ public class CheckPackage extends JFrame implements ActionListener {
     public void actionPerformed(ActionEvent ae) {
         String selectedPackage = ae.getActionCommand();
         setVisible(false);
-        new BookPackage();
+        new BookPackage(username);
     }
 
     public static void main(String[] args) {
