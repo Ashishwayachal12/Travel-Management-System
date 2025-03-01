@@ -230,14 +230,10 @@ public class Dashboard extends JFrame implements ActionListener{
 
 
 
-
-
-
         setVisible(true);
     }
 
-    public   void    actionPerformed(ActionEvent ae)
-    {
+    public   void    actionPerformed(ActionEvent ae) {
 
         if(ae.getSource()==addpersonaldetails)
         {
@@ -257,12 +253,12 @@ public class Dashboard extends JFrame implements ActionListener{
             new ViewCustomer(username);
 
 
-        }else if(ae.getSource()==deletepersonaldetails)
-        {
-            setVisible (false);
-//          new ViewCustomer(username);
+        }else if(ae.getSource() == deletepersonaldetails) {
+            setVisible(false);
 
-        }else if(ae.getSource()==checkpackages)
+//           new DeleteCustomer(username);
+        }
+        else if(ae.getSource()==checkpackages)
         {
             setVisible (true);
              new CheckPackage(username);
@@ -274,8 +270,8 @@ public class Dashboard extends JFrame implements ActionListener{
 
         }else if(ae.getSource()==viewpackages)
         {
-            setVisible (false);
-            // new AddCustomer();
+            setVisible (true);
+             new ViewPackage(username);
 
         }else if(ae.getSource()==viewhotel)
         {
@@ -304,13 +300,27 @@ public class Dashboard extends JFrame implements ActionListener{
 
         }else if(ae.getSource()==calculater)
         {
-            setVisible (false);
-            // new AddCustomer();
+           try
+           {
+               Runtime.getRuntime().exec("calc.exe");
+
+           }catch (Exception e){
+               e.printStackTrace();
+           }
+
+
+
 
         }else if(ae.getSource()==notepad)
         {
-            setVisible (true);
-             new Notepad();
+            try
+            {
+                Runtime.getRuntime().exec("notepad.exe");
+
+            }catch (Exception e)
+            {
+                e.printStackTrace();
+            }
 
         }else if(ae.getSource()==about)
         {
@@ -325,6 +335,7 @@ public class Dashboard extends JFrame implements ActionListener{
 
     public static void main(String[]args)
     {
+
         new Dashboard("");
     }
 }
