@@ -59,66 +59,68 @@ Ensure you have the following installed:
 
 ## Screenshots
 
+## Screenshots
+
 ### Splash Page
-https://github.com/user-attachments/assets/b0e342f6-d1b4-4260-a021-38115b7a4987
+![Splash Page](https://github.com/user-attachments/assets/b0e342f6-d1b4-4260-a021-38115b7a4987)
 
-### Singhup page
-https://github.com/user-attachments/assets/9b79d32f-aa63-4c41-aaff-0f0545094f1b
+### Signup Page
+![Signup Page](https://github.com/user-attachments/assets/9b79d32f-aa63-4c41-aaff-0f0545094f1b)
 
-### Forgetpassword page
-https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50
+### Forgot Password Page
+![Forgot Password Page](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50)
 
-### Login page
-https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50
+### Login Page
+![Login Page](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50)
 
-### Deshbord page
-https://github.com/user-attachments/assets/d68f6551-acf0-471a-8135-8ae883b264c6
+### Dashboard Page
+![Dashboard Page](https://github.com/user-attachments/assets/d68f6551-acf0-471a-8135-8ae883b264c6)
 
+### Add Personal Details Page
+![Add Personal Details Page](https://github.com/user-attachments/assets/880da32d-ea6a-44ac-ba13-92a39c1eddd9)
 
-### AddPersonalDetail page
-https://github.com/user-attachments/assets/880da32d-ea6a-44ac-ba13-92a39c1eddd9
+### Update Personal Details Page
+![Update Personal Details Page](https://github.com/user-attachments/assets/b46ae1eb-55b6-43d2-b186-b72abbc28a24)
 
-### UpdatePersonalDetail page
-https://github.com/user-attachments/assets/b46ae1eb-55b6-43d2-b186-b72abbc28a24
+### View Personal Details Page
+![View Personal Details Page](https://github.com/user-attachments/assets/d2e49ead-2da1-4576-8beb-008b4a7fd454)
 
-### ViewPersonalDetail page
-https://github.com/user-attachments/assets/d2e49ead-2da1-4576-8beb-008b4a7fd454
+### Delete Personal Details Page
+![Delete Personal Details Page](https://github.com/user-attachments/assets/71a1d2ab-b05e-4d30-a83b-e819b8863e71)
 
-### deletePersonalDetail page
-https://github.com/user-attachments/assets/71a1d2ab-b05e-4d30-a83b-e819b8863e71
+### Check Package Page
+![Check Package Page](https://github.com/user-attachments/assets/016854e0-347f-4057-a6ed-0a20e08eeb2f)
 
-### CheckPackage page
-https://github.com/user-attachments/assets/016854e0-347f-4057-a6ed-0a20e08eeb2f
+### Book Package Page
+![Book Package Page](https://github.com/user-attachments/assets/ae9ed87a-194f-4029-a3be-74d2ac6df898)
 
-### BookPackage page
-https://github.com/user-attachments/assets/ae9ed87a-194f-4029-a3be-74d2ac6df898
+### View Package Page
+![View Package Page](https://github.com/user-attachments/assets/bde1516b-7ff0-4b8b-ba9a-7e5df4c22866)
 
-### ViewPackage page
-https://github.com/user-attachments/assets/bde1516b-7ff0-4b8b-ba9a-7e5df4c22866
+### View Hotel Page
+![View Hotel Page](https://github.com/user-attachments/assets/1fcb3ddd-32da-4485-bbb1-010e7a8e6c53)
 
-### ViewHotel page
-https://github.com/user-attachments/assets/1fcb3ddd-32da-4485-bbb1-010e7a8e6c53
+### Book Hotel Page
+![Book Hotel Page](https://github.com/user-attachments/assets/8d1911b7-7f7f-4d83-b1e1-e60392b9b75e)
 
-### BookHotel page
-https://github.com/user-attachments/assets/8d1911b7-7f7f-4d83-b1e1-e60392b9b75e
+### View Booked Hotel Page
+![View Booked Hotel Page](https://github.com/user-attachments/assets/2807f236-95c6-499d-8d32-2288b210cb1c)
 
-### ViewBookedHotel page
-https://github.com/user-attachments/assets/2807f236-95c6-499d-8d32-2288b210cb1c
+### Destination Page
+![Destination Page](https://github.com/user-attachments/assets/d4216035-85fe-4434-a949-f8d04e50ea5f)
 
-### Destinatrion page
-https://github.com/user-attachments/assets/d4216035-85fe-4434-a949-f8d04e50ea5f
+### Payment Page
+![Payment Page](https://github.com/user-attachments/assets/656974f6-19f2-4600-962a-fb0c4aef221d)
 
-### Payment page
- https://github.com/user-attachments/assets/656974f6-19f2-4600-962a-fb0c4aef221d.
+### Calculator Page
+![Calculator Page](https://github.com/user-attachments/assets/8614a08a-f8c7-41d1-ba37-1714aa0567eb)
 
-### Calculater page
-https://github.com/user-attachments/assets/8614a08a-f8c7-41d1-ba37-1714aa0567eb
+### Notepad Page
+![Notepad Page](https://github.com/user-attachments/assets/cb21add6-0d82-453c-bc4e-e865b2be5d32)
 
-### NotePad page
- https://github.com/user-attachments/assets/cb21add6-0d82-453c-bc4e-e865b2be5d32
+### About Page
+![About Page](https://github.com/user-attachments/assets/44a945b5-5fc1-48c4-8afb-9c9af6f200f7)
 
-### About page
- https://github.com/user-attachments/assets/44a945b5-5fc1-48c4-8afb-9c9af6f200f7
 
  
 
