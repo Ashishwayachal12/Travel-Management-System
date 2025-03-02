@@ -60,16 +60,16 @@ Ensure you have the following installed:
 ## Screenshots
 
 ### Splash Page
-![Splash Page](![image](https://github.com/user-attachments/assets/b0e342f6-d1b4-4260-a021-38115b7a4987))
+![Splash Page]![image](https://github.com/user-attachments/assets/b0e342f6-d1b4-4260-a021-38115b7a4987)
 
 ### Singhup page
-![ Singhup page](![image](https://github.com/user-attachments/assets/9b79d32f-aa63-4c41-aaff-0f0545094f1b))
+![ Singhup page]![image](https://github.com/user-attachments/assets/9b79d32f-aa63-4c41-aaff-0f0545094f1b)
 
 ### Forgetpassword page
-![Forgetpassword page](![image](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50))
+![Forgetpassword page]![image](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50)
 
 ### Login page
-![Login page](![image](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50))
+![Login page]![image](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50)
 
 ### Deshbord page
 ![Deshbord page](![Screenshot 2025-03-02 232141](https://github.com/user-attachments/assets/d68f6551-acf0-471a-8135-8ae883b264c6))
