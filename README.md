@@ -70,8 +70,7 @@ Ensure you have the following installed:
 ### Forgot Password Page
 ![Forgot Password Page](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50)
 
-### Login Page
-![Login Page](https://github.com/user-attachments/assets/85214b07-de0c-4e89-b1bc-f4e5550bba50)
+
 
 ### Dashboard Page
 ![Dashboard Page](https://github.com/user-attachments/assets/d68f6551-acf0-471a-8135-8ae883b264c6)
