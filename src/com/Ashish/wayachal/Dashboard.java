@@ -281,12 +281,12 @@ public class Dashboard extends JFrame implements ActionListener{
         }else if(ae.getSource()==bookhotel)
         {
             setVisible (false);
-//             new AddCustomer(username);
+             new BookHotel(username);
 
         }else if(ae.getSource()==viewbookhotel)
         {
-            setVisible (false);
-            // new AddCustomer();
+            setVisible (true);
+            new ViewBookedHotel(username);
 
         }else if(ae.getSource()==destinations)
         {
@@ -296,7 +296,7 @@ public class Dashboard extends JFrame implements ActionListener{
         }else if(ae.getSource()==payments)
         {
             setVisible (false);
-            // new AddCustomer();
+           // new BookHotel(username);
 
         }else if(ae.getSource()==calculater)
         {
