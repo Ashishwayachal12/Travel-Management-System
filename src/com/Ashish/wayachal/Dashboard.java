@@ -254,9 +254,9 @@ public class Dashboard extends JFrame implements ActionListener{
 
 
         }else if(ae.getSource() == deletepersonaldetails) {
-            setVisible(false);
+            setVisible(true);
 
-//           new DeleteCustomer(username);
+           new DeleteDetails(username);
         }
         else if(ae.getSource()==checkpackages)
         {
@@ -295,8 +295,8 @@ public class Dashboard extends JFrame implements ActionListener{
 
         }else if(ae.getSource()==payments)
         {
-            setVisible (false);
-           // new BookHotel(username);
+            setVisible (true);
+            new Payment();
 
         }else if(ae.getSource()==calculater)
         {

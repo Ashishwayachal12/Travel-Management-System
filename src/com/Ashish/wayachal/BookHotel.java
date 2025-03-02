@@ -147,11 +147,11 @@ public class BookHotel extends JFrame implements ActionListener {
             try {
                 Conn c = new Conn();
 
-                // ✅ Extract only numeric price
+
                 String priceText = lblprice.getText().replace("Rs ", "").trim();
                 int price = Integer.parseInt(priceText);
 
-                // ✅ Use column names in SQL query
+
                 String query = "INSERT INTO bookHotel (username, hotel, persons, days, total_price) VALUES ('"
                         + lblusername.getText() + "', '"
                         + chotel.getSelectedItem() + "', '"

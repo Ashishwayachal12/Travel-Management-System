@@ -1,34 +1,18 @@
 package com.Ashish.wayachal;
 
-import javax.swing.JButton;
-//import javax.swing.JComboBox;
-import javax.swing.JFrame;
-import javax.swing.JLabel;
-import javax.swing.JPanel;
-//import javax.swing.JRadioButton;
-//import javax.swing.JTextField;
-import javax.swing.JOptionPane;
-import javax.swing.ImageIcon;
-//import javax.swing.border.Border;
-//import javax.swing.border.LineBorder;
-import javax.swing.BorderFactory;
-import java.awt.Color;
-import java.awt.Font;
-import java.awt.Image;
+import javax.swing.*;
+import java.awt.*;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
-//import java.sql.Connection;
-//import java.sql.DriverManager;
 import java.sql.ResultSet;
-//import java.sql.PreparedStatement;
-//import java.sql.SQLException;
-//import java.sql.Statement;
 
-public class ViewCustomer extends JFrame implements ActionListener {
-    JButton back;
+public class DeleteDetails extends JFrame implements ActionListener {
+    JButton delete, back;
     JPanel panel;
+    String username;
 
-    public ViewCustomer(String username) {
+    public DeleteDetails(String username) {
+        this.username = username;
         setTitle("Travel and Tourism Management System");
         setBounds(350, 150, 900, 600);
         setResizable(false);
@@ -89,26 +73,54 @@ public class ViewCustomer extends JFrame implements ActionListener {
             JOptionPane.showMessageDialog(null, "Error loading data", "Error", JOptionPane.ERROR_MESSAGE);
         }
 
+        // Delete Button
+        delete = new JButton("Delete");
+        delete.setFont(new Font("SansSerif", Font.BOLD, 14));
+        delete.setBounds(460, 400, 100, 30);
+        delete.setBackground(Color.RED);
+        delete.setForeground(Color.WHITE);
+        delete.setFocusable(false);
+        delete.setBorder(BorderFactory.createEmptyBorder());
+        delete.addActionListener(this);
+        panel.add(delete);
+
+        // Back Button
         back = new JButton("Back");
         back.setFont(new Font("SansSerif", Font.BOLD, 14));
-        back.setBounds(460, 400, 100, 30);
+        back.setBounds(320, 400, 100, 30);
         back.setBackground(Color.BLACK);
         back.setForeground(Color.WHITE);
         back.setFocusable(false);
         back.setBorder(BorderFactory.createEmptyBorder());
-        back.addActionListener(this);
+        back.addActionListener(e -> setVisible(false));
         panel.add(back);
 
         setVisible(true);
     }
 
     public void actionPerformed(ActionEvent ae) {
-        setVisible(false);
+        if (ae.getSource() == delete) {
+            int response = JOptionPane.showConfirmDialog(null, "Are you sure you want to delete your details?", "Confirm Deletion", JOptionPane.YES_NO_OPTION, JOptionPane.WARNING_MESSAGE);
+            if (response == JOptionPane.YES_OPTION) {
+                try {
+                    Conn c = new Conn();
+                    c.s.executeUpdate("DELETE FROM account WHERE username='" + username + "'");
+                    c.s.executeUpdate("DELETE FROM customer WHERE username='" + username + "'");
+                    c.s.executeUpdate("DELETE FROM bookpackage WHERE username='" + username + "'");
+                    c.s.executeUpdate("DELETE FROM bookhotel WHERE username='" + username + "'");
+
+                    JOptionPane.showMessageDialog(null, "Data Deleted Successfully");
+                    setVisible(false);
+
+                } catch (Exception e) {
+                    e.printStackTrace();
+                    JOptionPane.showMessageDialog(null, "Error deleting data", "Error", JOptionPane.ERROR_MESSAGE);
+                }
+            }
+        }
     }
 
     public static void main(String[] args) {
         new DeleteDetails("");
     }
 }
-
-
