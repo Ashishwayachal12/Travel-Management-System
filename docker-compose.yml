@@ -1,0 +1,28 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8
+    container_name: travel-mysql
+    restart: always
+    environment:
+      MYSQL_ROOT_PASSWORD: Ashish@99
+      MYSQL_DATABASE: travel
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+
+  travel-app:
+    build: .
+    container_name: travel-management-system
+    depends_on:
+      - mysql
+    environment:
+      DB_URL: jdbc:mysql://mysql:3306/travel
+      DB_USER: root
+      DB_PASSWORD: Ashish@99
+    command: ["java", "-cp", "out", "Splash"]
+
+volumes:
+  mysql_data:
